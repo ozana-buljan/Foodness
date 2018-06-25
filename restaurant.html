@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="author" content="ozana_buljan">
+    <meta name="description" content="Udacity FEND Project#6 Restaurant Review App:: by ozana_buljan">
+    <!-- Normalize.css for better cross-browser consistency -->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Pompiere" rel="stylesheet">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Restaurant Info</title>
+    <link rel="shortcut icon" type="img/foodness--icon-black.ico" href="img/foodness--icon-black.ico" />
+</head>
+
+<body class="inside">
+    <!-- -- HEADER -- -->
+    <header class="card" id="header">
+        <!-- NAV: logo-> home -->
+        <nav class="nav-logo">
+            <a href="/" tabindex="-1"><img src="img/foodness--logo.png" alt="foodness restaurant reviews app" class="logo"></a>
+        </nav>
+
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <!-- Breadcrumb -->
+            <ul id="breadcrumb" role="navigation">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -- MAIN -- -->
+    <main id="maincontent">
+        <!-- Map -->
+        <section id="maincontent-top">
+            <aside id="map-container">
+                <div id="map" aria-label="location" role="application"></div>
+            </aside>
+
+            <!-- Restaurant -->
+            <section id="restaurant-container">
+                <h2 id="restaurant-name"></h2>
+                <img id="restaurant-img">
+                <p id="restaurant-cuisine"></p>
+                <p id="restaurant-address"></p>
+                <table id="restaurant-hours"></table>
+            </section>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews-container">
+            <ul id="reviews-list"></ul>
+        </section>
+    </main>
+
+    <!-- -- FOOTER -- -->
+    <footer id="footer">
+        <section class="copyright">
+            © 2018 <a href="/"><strong><span class="foodness-foot">Foodness</span> - Restaurant Reviews</strong></a>
+            <p>All Rights Reserved.</p>
+        </section>
+        <section class="credits">
+            <p>Made for Udacity FEND by <a href="https://github.com/ozana-buljan">Ozana Buljan</a></p>
+        </section>
+    </footer>
+
+    <!--SCRIPTS-->
+    <!-- Database helpers -->
+    <script type="text/javascript" src="js/dbhelper.js"></script>
+    <!-- App: main file -->
+    <script type="text/javascript" src="js/restaurant_info.js"></script>
+
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNepbDDVzH2xs8NLOn2xJUFzc4MDRjc3k&libraries=places&callback=initMap"></script>
+</body>
+
+</html>

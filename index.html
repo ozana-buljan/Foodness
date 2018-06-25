@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="author" content="ozana_buljan">
+    <meta name="description" content="Udacity FEND Project#6 Restaurant Review App:: by ozana_buljan">
+    <!-- Normalize.css for better cross-browser consistency -->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Pompiere" rel="stylesheet">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Restaurant Reviews</title>
+    <link rel="shortcut icon" type="img/foodness--icon-black.ico" href="img/foodness--icon-black.ico" />
+</head>
+
+<body>
+    <!-- -- HEADER -- -->
+    <header class="card" id="header">
+        <!-- NAV -->
+        <nav>
+            <a href="/" tabindex="-1"><img src="img/foodness--logo.png" alt="foodness restaurant reviews app" class="logo"></a>
+        </nav>
+    </header>
+
+    <!-- -- MAIN -- -->
+    <main id="maincontent">
+        <!-- -- Section: HERO-- -->
+        <section class="hero">
+            <!--  <img src="img/home%20hero%20foodness.jpg" alt="vegateables and spices on a black slate" class="hero-img card">-->
+            <h1 class="hero-header">Good food is easy to find.</h1>
+            <h2 class="hero-subheader">Find the restaurant near you</h2>
+            <div class="filter-options">
+                <select tabindex="1" id="neighborhoods-select" name="neighborhoods" aria-label="Select Neighborhood" onchange="updateRestaurants()">
+          <option value="all">All Neighborhoods</option>
+        </select>
+                <select tabindex="2" id="cuisines-select" name="cuisines" aria-label="Select Cuisine" onchange="updateRestaurants()">
+          <option value="all">All Cuisines</option>
+        </select>
+            </div>
+        </section>
+        <!-- -- Section:  MAP -- -->
+        <section id="map-container" class="card">
+            <div id="map" aria-label="location" role="application"></div>
+        </section>
+        <!-- -- Section:  Restaurants list -- -->
+        <section class="restaurants-container">
+            <ul id="restaurants-list"></ul>
+        </section>
+    </main>
+
+    <!-- -- FOOTER -- -->
+    <footer id="footer">
+        <section class="copyright">
+            <p>© 2018 <a href="/"><strong><span class="foodness-foot">Foodness</span> - Restaurant Reviews</strong></a></p>
+            <p>All Rights Reserved.</p>
+        </section>
+        <section class="credits">
+            <p>Made for Udacity FEND by <a href="https://github.com/ozana-buljan">Ozana Buljan</a></p>
+        </section>
+    </footer>
+
+    <!--SCRIPTS-->
+    <!-- Database helpers -->
+    <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+
+    <!-- App: main file -->
+    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNepbDDVzH2xs8NLOn2xJUFzc4MDRjc3k&libraries=places&callback=initMap"></script>
+
+</body>
+
+</html>
