@@ -23,7 +23,7 @@ body {
 ul,
 li {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -110,7 +110,7 @@ nav h1 {
 
 nav h1 a {
     color: #222629;
-    font-size: 14pt;
+    font-size: 1rem;
     font-weight: 200;
     letter-spacing: 10px;
 
@@ -121,7 +121,7 @@ nav h1 a {
     list-style: none;
     background-color: #bace00;
     color: #222629;
-    font-size: 17px;
+    font-size: 1rem;
     margin-top: 0;
     width: 100%;
     z-index: 50;
@@ -241,7 +241,7 @@ nav h1 a {
     border: 1px solid #fef1e6;
     color: #222629;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11pt;
+    font-size: 1rem;
     height: 50px;
     letter-spacing: 0;
     width: 250px;
@@ -330,10 +330,10 @@ select option:hover {
 
 #restaurants-list p {
     margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 0 30px 25px;
     color: #fef1e6;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 #restaurants-list li a {
@@ -341,7 +341,7 @@ select option:hover {
     color: #222629;
     font-weight: 500;
     display: inline-block;
-    font-size: 10pt;
+    font-size: 1rem;
     margin-bottom: 30px;
     margin-left: 25px;
     padding: 8px 30px 10px;
@@ -431,7 +431,7 @@ select option:hover {
 }
 
 #restaurant-address {
-    font-size: 12pt;
+    font-size: 1.5 rem;
     margin: 10px 0px;
     color: #bace00;
 
@@ -440,7 +440,7 @@ select option:hover {
 #restaurant-cuisine {
     background-color: #bace00;
     color: #222629;
-    font-size: 12pt;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 10px;
     margin: 0 0 20px;
@@ -579,6 +579,8 @@ select option:hover {
     background-color: #bace00;
     width: 100%;
     margin-bottom: 0;
+    padding: 1em;
+    height: 3em;
 }
 
 .credits > p {
