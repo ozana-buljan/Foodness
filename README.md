@@ -42,9 +42,9 @@ Visit: https://ozana-buljan.github.io/Foodness/
 ### Responsiveness and Accessibility
 In **Stage One**, we took a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use.
 
-I tried my best to follow best practices of A11Y - 
+I tried my best to follow best practices of A11Y, implementing ARIA and semantic HTML. Audit shows at 92%.  
 
-I redesigend a the page a bit - giving it a new UI. Here are the mockups:
+I also redesigend a the page a bit - giving it a new UI. Here are the mockups:
 
 ![Foodness UI](https://github.com/ozana-buljan/Foodness/blob/master/img/Foodness-design--final.jpg)
 
