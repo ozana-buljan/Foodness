@@ -34,7 +34,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #bace00;
+    color: #86a200;
     text-decoration: none;
 }
 
@@ -256,10 +256,31 @@ option:hover {
     color: #222629;
 }
 
-select option:hover {
-    box-shadow: 0 0 10px 10px #bace00;
+
+/*
+
+select:active,
+select:hover {
+    outline-color: #bace00 !important;
+    background: #bace00 !important;
     inset;
+
 }
+
+select:focus,
+option:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: #bace00 !important;
+    outline-style: auto;
+    outline-width: 5px;
+    background: #bace00 !important;
+}
+
+select option:hover {
+    background-color: #bace00;
+    color: #222629;
+}
+*/
 
 /* ================ Map ================ */
 
@@ -340,11 +361,11 @@ select option:hover {
     background-color: #86a200;
     color: #222629;
     font-weight: 500;
-    display: inline-block;
+    width: 60%;
+    display: block;
     font-size: 1rem;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    padding: 8px 30px 10px;
+    margin: 1em auto 20px;
+    padding: 1em;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -353,8 +374,11 @@ select option:hover {
     transition: box-shadow .25s;
     transition: box-shadow .25s, -webkit-box-shadow .25s;
     border-radius: 2px;
+}
 
-
+#restaurants-list li a:hover {
+    color: #86a200;
+    background-color: #fef1e6;
 }
 
 /* *** *** ================ PAGE: Restaurant Details ================ *** *** */
@@ -417,9 +441,10 @@ select option:hover {
 #restaurant-name {
     font-family: 'Lobster', cursive;
     color: #bace00;
-    margin: 3em auto 1em 1em;
+    margin: 1em;
+    top: 1em;
     text-align: left;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 110%;
     font-weight: 200;
 
@@ -450,6 +475,12 @@ select option:hover {
     width: 90%;
     border-radius: 0 0 50px 0;
     margin: 1em auto auto 0;
+}
+
+#restaurant-hours {
+    align-self: center;
+
+    margin: 1em auto;
 }
 
 #restaurant-hours td {
@@ -538,7 +569,7 @@ select option:hover {
     text-align: right;
     width: 30%;
     border-bottom: 1px solid #bace00;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 
@@ -546,11 +577,9 @@ select option:hover {
 /* ====================== FOOTER ====================== */
 
 #footer {
-    font-size: 0.75rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    line-height: 0.75;
     background-color: #222629;
     align-content: center;
     justify-content: center;
@@ -570,22 +599,21 @@ select option:hover {
 .copyright > p {
     background-color: #222629;
     width: 100%;
-    margin: 1em 0 0 0;
+    font-size: 0.8em;
+    margin: 0;
     color: #fef1e6;
-    font-size: 1em;
 }
 
 .credits {
     background-color: #bace00;
     width: 100%;
     margin-bottom: 0;
-    padding: 1em;
-    height: 3em;
+    padding: 0 0.1em;
 }
 
 .credits > p {
-    font-size: 1em;
-    margin-bottom: 0;
+    font-size: 0.6em;
+    margin: 0 auto;
 }
 
 .credits > p > a {
@@ -618,11 +646,23 @@ select option:hover {
 /* *** *** *** PHONE & TABLET *** *** ****/
 
 @media screen and (max-width: 768px) {
-    /*GENERAL*/
+    /* *** *** Page: LANDING *** *** */
     .hero {
-        background-attachment: scroll;
+        /*parallax*/
+        background-image: url('../img/home-hero-foodness-sm.png');
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
     }
 
+    .hero-subheader {
+        text-align: left;
+        align-self: end;
+        font-size: 1.25rem;
+    }
     /* ======PAGE: restaurant info ======*/
     .inside #maincontent-top {
         display: grid;
@@ -684,9 +724,8 @@ select option:hover {
     /*TABLE*/
     table.responsive-table {
         width: auto;
-        display: block;
         position: relative;
-        margin: 1em;
+        margin: 1em auto;
         justify-content: center;
         align-content: center;
         align-self: center;
@@ -706,6 +745,7 @@ select option:hover {
         position: relative;
         overflow-x: auto;
         white-space: nowrap;
+
     }
     table.responsive-table tbody tr {
         display: inline-block;
@@ -722,6 +762,28 @@ select option:hover {
         text-align: center;
     }
 
+    /* reviews heading*/
+    #reviews-list li p:first-of-type {
+        width: 30%;
+        border-bottom: none;
+    }
+
+    #reviews-list li p:nth-of-type(2) {
+        border-bottom: none;
+        width: 30%;
+        text-align: center;
+        font-size: 0.75em;
+        align-self: center,
+    }
+
+    #reviews-list li p:nth-of-type(3) {
+        color: #bace00;
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid #bace00;
+        font-size: 1.25em;
+
+    }
 }
 
 /*-------------THE ᕕ( ᐛ )ᕗ END-----------------*/
