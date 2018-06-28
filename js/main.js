@@ -193,3 +193,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
         self.markers.push(marker);
     });
 }
+//add pasive listeners
+document.addEventListener('touchstart', onTouchStart, {
+    passive: true
+});

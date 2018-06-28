@@ -48,7 +48,7 @@ I redesigend a the page a bit - giving it a new UI. Here are the mockups:
 
 ![Foodness UI]()
 
-![Foodness Mockups]()
+![Foodness Mockups](https://github.com/ozana-buljan/Foodness/blob/master/img/Foodness---lf-mockups.png)
 
 However, under the hood, functionality is the same as the original.
 
