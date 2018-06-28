@@ -6,7 +6,7 @@ This project consists of three stages, and the goal is to incrementally convert 
 ## Running instructions
 
 ### Web live
-Visit:
+Visit: https://ozana-buljan.github.io/Foodness/
 
 ### Run locally
 *   Download the repository: click download ZIP on the right of the screen and extract the zip file to your computer or clone the repository using Git.
