@@ -128,7 +128,7 @@ class DBHelper {
 
     /* Restaurant image URL. */
     static imageUrlForRestaurant(restaurant) {
-        return (`https://github.com/ozana-buljan/Foodness/blob/master/img/${restaurant.photograph}`);
+        return (`./img/${restaurant.photograph}`);
     }
 
 
