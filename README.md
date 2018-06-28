@@ -1,32 +1,74 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Udacity FEND- Project #6:  FOODNESS - Restaurant Reviews App (stage 1)
 
-## Project Overview: Stage 1
-
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
-
-### Specification
-
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
-
-### What do I do from here?
-
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-## Leaflet.js and Mapbox:
-
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+This project consists of three stages, and the goal is to incrementally convert a static webpage to a mobile-ready web application.
 
 
+## Running instructions
 
+### Web live
+Visit:
+
+### Run locally
+*   Download the repository: click download ZIP on the right of the screen and extract the zip file to your computer or clone the repository using Git.
+*   Navigate to where you unzipped the file or cloned the repository.
+*  In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. However, if you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+
+
+### Set up yor server with Python
+* In a terminal, check the version of Python you have:
+
+    ```python -V```
+
+* If you have Python 2.x, spin up the server with
+
+    ```python -m SimpleHTTPServer 8000```
+
+    - This project uses port 8000.
+
+
+* For Python 3.x, you can use
+    ```python3 -m http.server 8000```
+    or
+    ```py -m http.server 8000```
+
+### Visit the site
+* With your server running, in your browser, navigate to the site: `http://localhost:8000`
+
+* Check out the website! For bonus points: in Dev Tools,  disconnect the internet or set the throttling to a low Internet speed to check out the offline experience of the app!
+
+
+## Tasks of stage 1 (akka what I did)
+
+### Responsiveness and Accessibility
+In **Stage One**, we took a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use.
+
+I tried my best to follow best practices of A11Y
+
+I redesigend a the page a bit - giving it a new UI. Here are the mockups:
+
+![Foodness UI]()
+
+![Foodness Mockups]()
+
+However, under the hood, functionality is the same as the original.
+
+### Embeding Google Maps
+
+We had a choice to use Leaflet with Mapbox or Google Maps. I picked Google Maps because I have never worked with them before and wanted to learn it.  Google recently (June 11, 2018) changed their API policies so it was a bit of a challenge, but I made it! It works!
+
+### Offline experience
+The other important partof this task was to add a service worker to begin the process of creating a seamless offline experience for the users.
+
+## References
+*   Original repo: [MWS Restaurant Stage 1 by Udacity](https://github.com/udacity/mws-restaurant-stage-1)
+
+## Author
+* [**Ozana Buljan**](https://github.com/ozana-buljan)
+* *Initial work* - [Udacity](https://github.com/udacity/mws-restaurant-stage-1)
+* Codeowners: @forbiddenvoid @hbkwong
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+Thanks to Udacity, my mentor and my classmates for this opportunity and all the support!
