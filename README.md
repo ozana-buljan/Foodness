@@ -42,11 +42,11 @@ Visit: https://ozana-buljan.github.io/Foodness/
 ### Responsiveness and Accessibility
 In **Stage One**, we took a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use.
 
-I tried my best to follow best practices of A11Y
+I tried my best to follow best practices of A11Y - 
 
 I redesigend a the page a bit - giving it a new UI. Here are the mockups:
 
-![Foodness UI]()
+![Foodness UI](https://github.com/ozana-buljan/Foodness/blob/master/img/Foodness-design--final.jpg)
 
 ![Foodness Mockups](https://github.com/ozana-buljan/Foodness/blob/master/img/Foodness---lf-mockups.png)
 
@@ -57,7 +57,16 @@ However, under the hood, functionality is the same as the original.
 We had a choice to use Leaflet with Mapbox or Google Maps. I picked Google Maps because I have never worked with them before and wanted to learn it.  Google recently (June 11, 2018) changed their API policies so it was a bit of a challenge, but I made it! It works!
 
 ### Offline experience
-The other important partof this task was to add a service worker to begin the process of creating a seamless offline experience for the users.
+The other important part of this task was to add a service worker to begin the process of creating a seamless offline experience for the users.
+
+## Lighthouse audit
+Results of the last audit conducted (on localhost:8000)
+![Audit](https://github.com/ozana-buljan/Foodness/blob/master/img/2018-06-28-19-45-Lighthouse-Audit.jpg)
+
+
+View full audit [here](https://github.com/ozana-buljan/Foodness/blob/master/Lighthouse%20Audit%20Report%20for%20the%20project8000-20180628T193509.json)
+
+There is (obviosly) still some place for improvement - but I hope this would be enough to pass this stage.
 
 ## References
 *   Original repo: [MWS Restaurant Stage 1 by Udacity](https://github.com/udacity/mws-restaurant-stage-1)
